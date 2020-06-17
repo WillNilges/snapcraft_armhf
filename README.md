@@ -8,8 +8,8 @@ Amd64 Snap builder: [![](https://images.microbadger.com/badges/image/dawidcrivel
 Install docker
 ```
 sudo apt install docker.io
-docker pull snapcore/snapcraft
 sudo usermod -a -G docker $USER
+docker pull snapcore/snapcraft
 docker run --rm --privileged multiarch/qemu-user-static:register --reset
 ```
 
